@@ -10,7 +10,9 @@ class SearchBar extends Component {
         <p>{ searchText }</p>
         <p>{ bookmarkedOnly }</p>
         <p>{ selectedGenre }</p>
-        <form data-testid="search-bar-form" />
+        <form data-testid="search-bar-form">
+          <input type="text" data-testid="text-input" />
+        </form>
       </div>
     );
   }
