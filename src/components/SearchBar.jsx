@@ -11,7 +11,10 @@ class SearchBar extends Component {
         <p>{ bookmarkedOnly }</p>
         <p>{ selectedGenre }</p>
         <form data-testid="search-bar-form">
-          <input type="text" data-testid="text-input" />
+          <label htmlFor="text-input" data-testid="text-input-label">
+            Inclui o texto
+            <input id="text-input" type="text" data-testid="text-input" />
+          </label>
         </form>
       </div>
     );
