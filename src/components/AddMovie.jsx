@@ -10,6 +10,7 @@ class AddMovie extends React.Component {
       imagePath: '',
       storyline: '',
       rating: 0,
+      genre: 'action',
     };
   }
 
@@ -76,7 +77,7 @@ class AddMovie extends React.Component {
     return (
       <label data-testid="storyline-input-label" htmlFor="storyline-input">
         Sinopse
-        <input
+        <textarea
           id="storyline-input"
           name="storyline"
           value={ storyline }
@@ -104,6 +105,26 @@ class AddMovie extends React.Component {
     );
   }
 
+  selectGenre() {
+    const { genre } = this.state;
+    return (
+      <label data-testid="genre-input-label" htmlFor="genre-input">
+        Gênero
+        <select
+          id="genre-input"
+          name="genre"
+          value={ genre }
+          onChange={ this.handleChange }
+          data-testid="genre-input"
+        >
+          <option value="action" data-testid="genre-option">Ação</option>
+          <option value="comedy" data-testid="genre-option">Comédia</option>
+          <option value="thriller" data-testid="genre-option">Suspense</option>
+        </select>
+      </label>
+    );
+  }
+
   render() {
     return (
       <form data-testid="add-movie-form">
@@ -112,6 +133,7 @@ class AddMovie extends React.Component {
         { this.inputImage() }
         { this.textareaSinopse() }
         { this.inputRating() }
+        { this.selectGenre() }
       </form>
     );
   }
