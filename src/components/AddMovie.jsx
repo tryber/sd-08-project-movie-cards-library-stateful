@@ -4,10 +4,10 @@ class AddMovie extends React.Component {
   constructor(props) {
     super(props);
     this.handleChange = this.handleChange.bind(this);
-
     this.state = {
       subtitle: '',
       title: '',
+      imagePath: '',
     };
   }
 
@@ -52,11 +52,29 @@ class AddMovie extends React.Component {
     );
   }
 
+  inputImage() {
+    const { imagePath } = this.state;
+    return (
+      <label data-testid="image-input-label" htmlFor="image-input">
+        Imagem
+        <input
+          id="image-input"
+          type="text"
+          name="imagePath"
+          value={ imagePath }
+          onChange={ this.handleChange }
+          data-testid="image-input"
+        />
+      </label>
+    );
+  }
+
   render() {
     return (
       <form data-testid="add-movie-form">
         { this.inputTitle() }
         { this.inputSubtitle() }
+        { this.inputImage() }
       </form>
     );
   }
