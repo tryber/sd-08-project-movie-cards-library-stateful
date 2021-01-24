@@ -9,6 +9,7 @@ class AddMovie extends React.Component {
       title: '',
       imagePath: '',
       storyline: '',
+      rating: 0,
     };
   }
 
@@ -86,6 +87,23 @@ class AddMovie extends React.Component {
     );
   }
 
+  inputRating() {
+    const { rating } = this.state;
+    return (
+      <label data-testid="rating-input-label" htmlFor="rating-input">
+        Avaliação
+        <input
+          id="rating-input"
+          type="number"
+          name="rating"
+          value={ rating }
+          onChange={ this.handleChange }
+          data-testid="rating-input"
+        />
+      </label>
+    );
+  }
+
   render() {
     return (
       <form data-testid="add-movie-form">
@@ -93,6 +111,7 @@ class AddMovie extends React.Component {
         { this.inputSubtitle() }
         { this.inputImage() }
         { this.textareaSinopse() }
+        { this.inputRating() }
       </form>
     );
   }
