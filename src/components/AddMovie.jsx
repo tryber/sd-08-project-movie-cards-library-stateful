@@ -3,7 +3,7 @@ import React from 'react';
 class AddMovie extends React.Component {
   render() {
     return (
-      <section />
+      <form data-testid="add-movie-form"> </form>
     );
   }
 }
