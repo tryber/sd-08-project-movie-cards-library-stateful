@@ -11,9 +11,8 @@
     "shelljs": "0.8.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "./exp",
     "build": "react-scripts build",
-    "test": "react-scripts test --verbose=true",
     "eject": "react-scripts eject",
     "lint:styles": "npx stylelint '**/*.css'",
     "lint": "eslint --no-inline-config --fix --no-error-on-unmatched-pattern -c .eslintrc.json . --ext .js,.jsx"

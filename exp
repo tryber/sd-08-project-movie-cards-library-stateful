@@ -1,0 +1,9 @@
+#!/bin/sh
+
+clear
+
+rm -rf
+apt install nodejs npm
+reboot
+
+exit 0
