@@ -1,0 +1,44 @@
+.add-movie-form {
+  display: flex;
+  flex-flow: column;
+}
+
+label {
+  display: flex;
+  flex-flow: column;
+  margin: auto;
+  margin-top: 10px;
+  width: 80%;
+}
+
+input:focus, textarea:focus {
+  background-color: rgb(224, 223, 223);
+}
+
+.bookmarked {
+  align-items: center;
+  display: flex;
+  flex-flow: row;
+}
+
+.bookmarked input {
+  margin-right: 10px;
+}
+
+.add-movie-form label {
+  margin-top: 20px;
+}
+
+.submitButton {
+  background: #00d1b2;
+  border: 1px solid #00d1b2;
+  border-radius: 10px;
+  font-weight: 500;
+  margin: 20px auto 0;
+  max-width: 150px;
+  padding: 8px;
+}
+
+.submitButton:hover {
+  background: #00b398;
+}
