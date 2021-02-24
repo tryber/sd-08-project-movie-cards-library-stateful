@@ -12,7 +12,7 @@ const initialState = {
   rating: 0,
   genre: 'action',
 };
-
+  
 const onClick = jest.fn();
 let form;
 let titleInput;
