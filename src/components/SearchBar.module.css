@@ -1,0 +1,31 @@
+.search-bar-wrapper {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 20px 0;
+}
+
+.search-bar {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.search-bar > * {
+  margin-bottom: 20px;
+}
+
+
+.search-bar label {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-bar *[ for = 'check-box' ] {
+  align-items: center;
+  flex-direction: row;
+}
+
+.search-bar *[ type = 'checkbox' ] {
+  margin-left: 10px;
+}
+

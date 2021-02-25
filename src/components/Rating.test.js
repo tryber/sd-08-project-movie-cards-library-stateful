@@ -6,7 +6,7 @@ import Rating from './Rating';
 
 describe('Verifica o componente <Rating />', () => {
   it('Renderize o componente', () => {
-    render(<Rating />);
+    render(<Rating rating={3} />);
   });
 
   it('Renderize o componente com o valor passado para ele via prop `rating`', () => {

@@ -1,0 +1,21 @@
+.add-movie-wrapper {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 50px 0;
+}
+
+.add-movie {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.add-movie > * {
+  margin-bottom: 20px;
+}
+
+.add-movie-labels {
+  display: flex;
+  flex-direction: column;
+}
