@@ -26,7 +26,10 @@ MovieCard.propTypes = {
     title: PropTypes.string,
     subtitle: PropTypes.string,
     storyline: PropTypes.string,
-    rating: PropTypes.number,
+    rating: PropTypes.oneOfType([
+      PropTypes.number.isRequired,
+      PropTypes.string.isRequired,
+    ]),
     imagePath: PropTypes.string,
   }).isRequired,
 };
