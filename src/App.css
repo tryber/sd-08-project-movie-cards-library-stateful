@@ -81,3 +81,10 @@ body {
   justify-content: flex-end;
   padding: 12px 20px;
 }
+
+.form-text {
+  display: flex;
+  flex-flow: wrap;
+  flex-direction: column;
+  margin: 30px;
+}
