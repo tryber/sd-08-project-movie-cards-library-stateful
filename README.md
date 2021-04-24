@@ -626,7 +626,7 @@ Dentro desse formulário haverá campos usados para preencher informações do n
 - O botão deve conter o atributo `data-testid="send-button"`
 
 - A propriedade `onClick` do botão invoca uma função definida por você, em `<AddMovie />`, que:
-  - Executa a callback passada para o componente `<AddMovie />` via props, chamada `onClick`, que recebe como parâmetro o estado atual de `<AddMovie />`;
+  - Executa a callback passada para o componente `<AddMovie />` via props, chamque recebe como parâmetro o estado atual de `<AddMovie />`;
   - Reseta o estado de `<AddMovie />`, voltando para o inicial, conforme mencionado anteriormente.
 
 **O que será verificado:**
