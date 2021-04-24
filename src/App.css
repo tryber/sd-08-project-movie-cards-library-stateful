@@ -1,21 +1,19 @@
 body {
-  background-color: whitesmoke;
+  background-color: #343a40;
   box-sizing: border-box;
   font-size: 16px;
 }
 
 .movie-card-header {
   align-items: center;
-  background-color: #343a40;
+  background-color: rgba(226, 225, 225, 0.125);
   display: flex;
   height: 100px;
   justify-content: center;
 }
 
 .page-title {
-  color: #f8f9fa;
-  font-size: 28px;
-  font-weight: 500;
+  color: #1e7ddc;
   text-align: center;
 }
 
@@ -80,4 +78,9 @@ body {
   display: flex;
   justify-content: flex-end;
   padding: 12px 20px;
+}
+
+
+label {
+  color: whitesmoke;
 }
