@@ -12,7 +12,6 @@ describe('Verifica o componente <MovieCard />', () => {
     imagePath: 'images/movie_1',
   };
 
-
   it('Renderize o componente', () => {
     render(<MovieCard movie={movie} />);
   });

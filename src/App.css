@@ -81,3 +81,26 @@ body {
   justify-content: flex-end;
   padding: 12px 20px;
 }
+
+.search-bar {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 30px;
+}
+
+.search-bar input {
+  display: flexbox;
+}
+
+.add-movie {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 30px;
+}
+
+.add-movie input, textarea {
+  display: block;
+  width: 800px;
+}
