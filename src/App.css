@@ -81,3 +81,34 @@ body {
   justify-content: flex-end;
   padding: 12px 20px;
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.section-form {
+  background-color: rgb(235, 235, 235);
+  border: 2px solid rgb(52, 58, 64);
+  border-radius: 10px;
+  margin: 15px;
+}
+
+.input-text, .input-select, .input-number {
+  height: 35px;
+  width: 100%;
+}
+
+.input-checkbox, .input-select, .input-number {
+  margin: 0 5px 0 0;
+}
+
+button {
+  border-radius: 3px;
+  width: 10%;
+}
+
+textarea {
+  display: block;
+}
