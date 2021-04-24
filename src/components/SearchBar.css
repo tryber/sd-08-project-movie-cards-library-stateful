@@ -1,0 +1,42 @@
+.form-class {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px 35px;
+}
+
+.label-class {
+  font-size: 18px;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.label-checkbox {
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+.text-input {
+  border-color: gainsboro;
+  border-radius: 8px;
+  border-width: 1px;
+  font-size: 18px;
+  padding: 5px 10px;
+  width: 100%;
+}
+
+.checkbox-input {
+  font-size: 20px;
+  height: 18px;
+  margin: 22px 10px 10px 0;
+  width: 18px;
+}
+
+.select-input {
+  background-color: white;
+  border-color: gainsboro;
+  border-radius: 8px;
+  border-width: 1px;
+  font-size: 18px;
+  padding: 10px;
+  width: 100%;
+}
