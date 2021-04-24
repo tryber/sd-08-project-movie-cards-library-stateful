@@ -4,6 +4,12 @@ body {
   font-size: 16px;
 }
 
+.search-bar, .add-movie {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 30px;
+}
+
 .movie-card-header {
   align-items: center;
   background-color: #343a40;
@@ -80,4 +86,9 @@ body {
   display: flex;
   justify-content: flex-end;
   padding: 12px 20px;
+}
+
+.add-movie button {
+  height: 40px;
+  width: 200px;
 }
