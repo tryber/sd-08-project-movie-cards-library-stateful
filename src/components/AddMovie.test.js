@@ -30,9 +30,8 @@ let genreInputLabel;
 let genreOptions;
 let sendButton;
 
-
 beforeEach(() => {
-  const { queryAllByTestId, queryByTestId } = render(<AddMovie onClick={onClick} />);
+  const { queryAllByTestId, queryByTestId } = render(<AddMovie onClick={ onClick } />);
   form = queryAllByTestId('add-movie-form');
   titleInput = queryByTestId('title-input');
   titleInputLabel = queryByTestId('title-input-label');
@@ -50,12 +49,11 @@ beforeEach(() => {
   sendButton = queryByTestId('send-button');
 });
 
-
 describe('6 - Crie um componente chamado `<AddMovie />`', () => {
   it('Renderize o componente', () => {
-    render(<AddMovie onClick={() => jest.fn()} />);
+    render(<AddMovie onClick={ () => jest.fn() } />);
   });
-})
+});
 
 describe('7 - Renderize um formulário dentro de `<AddMovie />`', () => {
   it('Renderize 1, e apenas 1, form', () => {
@@ -115,9 +113,10 @@ describe('10 - Renderize um input do tipo texto dentro do formulário em `<AddMo
     expect(imageInputLabel).toHaveTextContent('Imagem');
   });
 
-  it('Defina o estado inicial do input de imagem como "", ou seja, uma string vazia', () => {
-    expect(imageInput).toHaveValue(initialState.imagePath);
-  });
+  it('Defina o estado inicial do input de imagem como "", ou seja, uma string vazia',
+    () => {
+      expect(imageInput).toHaveValue(initialState.imagePath);
+    });
 
   it('Altere o valor do input de imagem quando algo é digitado nele', () => {
     event.type(imageInput, 'http://localhost:3000/images/Appleseed_Alpha.jpg');
@@ -174,7 +173,6 @@ describe('13 - Renderize um `select` do formulário em `<AddMovie />` para selec
     { value: 'thriller', text: 'Suspense' },
   ];
 
-
   it('Renderize um select com 3 opções de genero de filme', () => {
     expect(genreInput).toBeInTheDocument();
     expect(genreOptions).toHaveLength(options.length);
@@ -184,7 +182,6 @@ describe('13 - Renderize um `select` do formulário em `<AddMovie />` para selec
     expect(genreInputLabel).toBeInTheDocument();
     expect(genreInputLabel).toHaveTextContent('Gênero');
   });
-
 
   it('Será validado se todas as opções no select tem o texto e o valor esperados, que são, respectivamente: Ação e action, Comédia e comedy, Suspense e thriller', () => {
     genreOptions.forEach((option, index) => {
