@@ -1,0 +1,39 @@
+.search-bar-form {
+  align-items: center;
+  display: flex;
+  flex-flow: column wrap;
+  font-size: 1.1rem;
+  justify-content: space-evenly;
+}
+
+.search-text {
+  border-radius: 20px;
+  outline: none;
+  padding: 5px;
+  text-align: center;
+  width: 600px;
+}
+
+.search-text:focus::placeholder {
+  color: transparent;
+}
+
+.filter-checks {
+  display: flex;
+  font-size: medium;
+  justify-content: space-around;
+  margin-top: 10px;
+  width: 50vw;
+}
+
+.filter-checks input {
+  width: 20px;
+}
+
+.filter-checks input, .filter-checks select, .search-text {
+  margin: 2px 5px;
+}
+
+.search-text:focus {
+  border: 2px solid green;
+}
