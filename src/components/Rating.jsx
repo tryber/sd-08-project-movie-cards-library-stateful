@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-class Rating extends React.Component {
+class Rating extends React.PureComponent {
   render() {
     const { rating } = this.props;
     return (
