@@ -36,13 +36,13 @@ const movies = [
 ];
 
 
-describe('15 - Crie um componente chamado `<MovieLibrary />`', () => {
+describe.only('15 - Crie um componente chamado `<MovieLibrary />`', () => {
   it('Renderize o componente', () => {
     render(<MovieLibrary movies={movies} />);
   });
 });
 
-describe('16 - Configure o estado inicial do componente `<MovieLibrary />`', () => {
+describe.only('16 - Configure o estado inicial do componente `<MovieLibrary />`', () => {
   it('Defina o estado inicial de `searchText` como uma string vazia', () => {
     const { getByTestId } = render(<MovieLibrary movies={movies} />);
     const searchText = getByTestId('text-input');
@@ -68,7 +68,7 @@ describe('16 - Configure o estado inicial do componente `<MovieLibrary />`', () 
   });
 });
 
-describe('17 - Renderize `<SearchBar />` dentro de `<MovieLibrary />`', () => {
+describe.only('17 - Renderize `<SearchBar />` dentro de `<MovieLibrary />`', () => {
   it('Renderize o componente `<SearchBar />`', () => {
     const { getAllByTestId } = render(<MovieLibrary movies={movies} />);
     const searchBar = getAllByTestId('search-bar-form');
